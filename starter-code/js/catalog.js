@@ -41,11 +41,11 @@ function handleSubmit(event) {
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
   var product = document.getElementById('items').value;
-  console.log('product is ' + product);
+  // console.log('product is ' + product);
 
   // TODO: get the quantity
   var quantity = document.getElementById('quantity').value;
-  console.log('quantity is ' + quantity);
+  // console.log('quantity is ' + quantity);
 
   // TODO: using those, add one item to the Cart
   cart.addItem(product, quantity);
@@ -53,9 +53,18 @@ function addSelectedItemToCart() {
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
 function updateCounter() {
-  
+
   var itemCount = document.getElementById('itemCount');
-  itemCount.textContent = cart.items.;
+
+  var pEl = document.createElement('p');
+  // var total = 0;
+  // for(var i in Product.allProducts) {
+  //   total += cart.this.items[i];
+  //   console.log('stuff in items ' + cart.this.items[i]);
+  // }
+  // pEl.textContent = cart.items.quantity;
+  // console.log('items in cart ' + cart.items[0].quantity);
+  // itemCount.appendChild(pEl);
 
 }
 
