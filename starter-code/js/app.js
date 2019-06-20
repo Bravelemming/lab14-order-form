@@ -24,8 +24,9 @@ Cart.prototype.saveToLocalStorage = function() {
   localStorage.setItem('total', JSON.stringify(total));
 };
 
-Cart.prototype.removeItem = function(item) {
+Cart.prototype.removeItem = function(id) {
   // TODO: Fill in this instance method to remove one item from the cart.
+  this.items.splice(id, 1);
   // Note: You will have to decide what kind of parameter to pass in here!
 };
 
