@@ -14,9 +14,9 @@ function populateForm() {
   var selectElement = document.getElementById('items');
   for (var i in Product.allProducts) {
     var optionEl = document.createElement('option');
-    var index = optionEl.value;
-    console.log('index is ' + index);
-    optionEl.textContent = Product.allProducts[index].name;
+    // optionEl.value = Product.allProducts[i].name;
+    optionEl.textContent = Product.allProducts[i].name;
+
     selectElement.appendChild(optionEl);
   }
 
@@ -40,20 +40,33 @@ function handleSubmit(event) {
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
-  var index = document.getElementById('option').value;
-  console.log(index);
-  var product = Product.allProducts[index];
-  console.log(product);
+  var product = document.getElementById('items').value;
+  // console.log('product is ' + product);
+
   // TODO: get the quantity
   var quantity = document.getElementById('quantity').value;
-  console.log(quantity);
+  // console.log('quantity is ' + quantity);
+
   // TODO: using those, add one item to the Cart
   cart.addItem(product, quantity);
-
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+
+  var itemCount = document.getElementById('itemCount');
+
+  var pEl = document.createElement('p');
+  // var total = 0;
+  // for(var i in Product.allProducts) {
+  //   total += cart.this.items[i];
+  //   console.log('stuff in items ' + cart.this.items[i]);
+  // }
+  // pEl.textContent = cart.items.quantity;
+  // console.log('items in cart ' + cart.items[0].quantity);
+  // itemCount.appendChild(pEl);
+
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
