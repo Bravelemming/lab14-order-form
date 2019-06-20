@@ -57,14 +57,8 @@ function updateCounter() {
   var itemCount = document.getElementById('itemCount');
 
   var pEl = document.createElement('p');
-  // var total = 0;
-  // for(var i in Product.allProducts) {
-  //   total += cart.this.items[i];
-  //   console.log('stuff in items ' + cart.this.items[i]);
-  // }
-  // pEl.textContent = cart.items.quantity;
-  // console.log('items in cart ' + cart.items[0].quantity);
-  // itemCount.appendChild(pEl);
+  var total = JSON.parse(localStorage.getItem('total'));
+itemCount.textContent = total;
 
 }
 
