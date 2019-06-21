@@ -1,1 +1,81 @@
 /* TODO: Make it awesome */
+body {
+  background-color: #73A580;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 4em;
+  color: #F4A698;
+  text-shadow: 1px 1px #DD614A;
+  margin: 2%;
+  border: 10px solid #C5C392;
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin: 2em;
+}
+
+li {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-right: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #F4A698;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px #DD614A;
+  font-size: 1.5em;
+}
+
+a:hover {
+  text-shadow: 1px 1px #C5C392;
+  color: #73A580;
+  background: #F4A698;
+  border-radius: 8%;
+  padding: .2em;
+}
+
+fieldset {
+  font-size: 1.5em;
+}
+
+input, select {
+  font-size: 1em;
+}
+
+.copy {
+  text-align: center;
+}
+
+.copy > ol {
+  color: #73A580;
+  text-shadow: .5px .5px #C5C392;
+  background-color: #F4A698;
+  padding: 20px 0;
+  margin: 10px 0;
+  line-height: 30px;
+  margin: 3em 6em;
+  border-radius: 10px;
+}
+
+legend, label {
+  margin: 1.5em 0;
+  color: #F4A698;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px #DD614A;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  margin: 6em 0;
+  color: #C5C392;
+  text-shadow: .5px .5px #F4A698;
+}
